@@ -1,0 +1,42 @@
+* {
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #171717;
+    color: white;
+}
+
+panel {
+    display: block;
+    border-radius: 30px;
+
+    background-color: #282828;
+    color: white;
+
+    padding: 19px;
+    padding-top: 19px;
+}
+
+panel ctitle {
+    display: block;
+    color: #ffffff;
+
+    font-size: larger;
+
+    margin-bottom: 8px;
+}
+
+panel csub {
+    display: block;
+    color: #ffffffbf;
+
+    font-weight: 300;
+    font-size: large;
+
+    margin-bottom: 8px;
+}
+
+panel content {
+    
+}
