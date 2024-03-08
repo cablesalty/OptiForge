@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="lib.css">
     <script src="test.js" defer></script>
     <script src="lib.js" defer></script>
+    <script src="https://kit.fontawesome.com/2c53a1c7fb.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <h1>Hello World!</h1>
@@ -15,12 +16,36 @@
     <panel>
         <ctitle>Test panel title</ctitle>
         <csub>Test panel subtitle</csub>
+
         <content>
             <p>A default content holder wraps text around like this and holds images like this:</p>
             <img src="https://pbs.twimg.com/profile_images/949787136030539782/LnRrYf6e_400x400.jpg" alt="grandma holding a gun">
         </content>
-        <content type="textcontent">
-            <p>Some basic text here!</p>
+
+        <content type="iconup">
+            <img src="https://pbs.twimg.com/profile_images/949787136030539782/LnRrYf6e_400x400.jpg" alt="grandma holding a gun">
+            <ctitle>Hello World!</ctitle>
+            <csub>This is an iconup content type!</csub>
+        </content>
+        <br>
+
+        <content type="iconside">
+            <img src="https://pbs.twimg.com/profile_images/949787136030539782/LnRrYf6e_400x400.jpg" alt="grandma holding a gun">
+            <sidetext>
+                <ctitle>Hello World!</ctitle>
+                <csub>This is an iconside content type!</csub>
+            </sidetext>
+        </content>
+    </panel>
+
+
+    <panel>
+        <content type="iconside">
+            <img src="https://pbs.twimg.com/profile_images/949787136030539782/LnRrYf6e_400x400.jpg" alt="grandma holding a gun">
+            <sidetext>
+                <ctitle>Hello again!</ctitle>
+                <csub>Content in a panel!</csub>
+            </sidetext>
         </content>
     </panel>
 

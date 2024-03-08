@@ -16,6 +16,15 @@ panel {
 
     padding: 19px;
     padding-top: 19px;
+    margin-bottom: 15px;
+}
+
+panel img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 20px;
+    margin-bottom: 10px;
 }
 
 panel ctitle {
@@ -38,5 +47,52 @@ panel csub {
 }
 
 panel content {
-    
+
 }
+
+panel content[type="iconup"] {
+    display: flex;
+    flex-direction: column; /* Arrange items vertically */
+    align-items: center; /* Align items horizontally */
+}
+
+panel content[type="iconup"] img {
+    width: 50px; /* Adjust the width as needed */
+    margin-bottom: 10px; /* Add margin below the image */
+}
+
+panel content[type="iconup"] ctitle,
+panel content[type="iconup"] csub {
+    font-size: 18px; /* Title and subtitle font size */
+    margin: 0; /* Reset margin */
+}
+
+panel content[type="iconside"] {
+    display: flex;
+    align-items: center; /* Align items vertically */
+}
+
+panel content[type="iconside"] img {
+    width: 50px; /* Adjust the width as needed */
+    margin-right: 10px; /* Add margin to separate from text */
+}
+
+panel content[type="iconside"] sidetext {
+    display: flex;
+    flex-direction: column; /* Arrange items vertically */
+}
+
+panel content[type="iconside"] ctitle,
+panel content[type="iconside"] csub {
+    margin: 0; /* Reset margin */
+}
+
+panel content[type="iconside"] ctitle {
+    font-size: 18px; /* Title font size */
+    margin-bottom: 4px;
+}
+
+panel content[type="iconside"] csub {
+    font-size: 16px; /* Subtitle font size */
+}
+
