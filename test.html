@@ -11,13 +11,15 @@
 </head>
 <body>
     <menubar placement="top">
+        <profilecircle><img src="https://pbs.twimg.com/profile_images/949787136030539782/LnRrYf6e_400x400.jpg" alt="Profile Picture"></profilecircle>
         <ctitle>Hello, cablesalty!</ctitle>
+        <profilespacer></profilespacer>
         <panel class="stickycollapse">
             <content type="iconside">
-                <iconwrapper><i class="fa-solid fa-moon"></i></iconwrapper>
+                <iconwrapper><i class="fa-solid fa-circle-exclamation"></i></iconwrapper>
                 <sidetext>
-                    <ctitle>Hello again!</ctitle>
-                    <csub>This uses FA/Text based icons!</csub>
+                    <ctitle>Inside a menubar</ctitle>
+                    <csub>This panel will collapse when you scroll more than the height of this menubar!</csub>
                 </sidetext>
             </content>
         </panel>
@@ -75,17 +77,6 @@
         </content>
     </panel>
 
-    <!-- <menubar placement="bottom">
-        <nav>
-            <a href="">Link 1</a>
-            <a href="">Link 2</a>
-            <a href="">Link 3</a>
-            <a href="">Link 4</a>
-        </nav>
-        <ctitle>Test application</ctitle>
-        <csub>Subtitle in the menubar for some reason</csub>
-    </menubar> -->
-
     <menubar placement="bottom" transparent>
         <nav>
             <btncontainer><a selected href=""><i class="fa-solid fa-home"></i></a></btncontainer>
@@ -94,5 +85,7 @@
             <btncontainer><a href=""><i class="fa-solid fa-globe"></i></a></btncontainer>
         </nav>
     </menubar>
+
+    <dialog id="profileDialog" class="dy-profiledialog">Profile</dialog>
 </body>
 </html>
