@@ -36,6 +36,19 @@ for (let i = 0; i < menubarElements.length; i++) {
     }
 }
 
+window.addEventListener('scroll', function () {
+    var stickycollapse = document.querySelector('.stickycollapse');
+    var stickymenubar = document.querySelector('menubar');
+    var stickymenubarHeight = stickymenubar.getBoundingClientRect().height;
+
+    if (window.pageYOffset > stickymenubarHeight) {
+        stickycollapse.classList.add('hidden');
+    } else {
+        stickycollapse.classList.remove('hidden');
+    }
+});
+
+
 if (debug) {
     // Enable debug: Draw red borders around everything.
     let allElements = document.getElementsByTagName("*");

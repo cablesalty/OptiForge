@@ -7,7 +7,9 @@ html {
     margin: 0;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
     box-sizing: inherit;
 }
 
@@ -63,35 +65,42 @@ panel csub {
     margin-bottom: 17px;
 }
 
-panel content {
-
-}
+panel content {}
 
 panel content[type="iconup"] {
     display: flex;
-    flex-direction: column; /* Arrange items vertically */
-    align-items: center; /* Align items horizontally */
+    flex-direction: column;
+    /* Arrange items vertically */
+    align-items: center;
+    /* Align items horizontally */
 }
 
 panel content[type="iconup"] img {
-    width: 50px; /* Adjust the width as needed */
-    margin-bottom: 10px; /* Add margin below the image */
+    width: 50px;
+    /* Adjust the width as needed */
+    margin-bottom: 10px;
+    /* Add margin below the image */
 }
 
 panel content[type="iconup"] ctitle,
 panel content[type="iconup"] csub {
-    font-size: 18px; /* Title and subtitle font size */
-    margin: 0; /* Reset margin */
+    font-size: 18px;
+    /* Title and subtitle font size */
+    margin: 0;
+    /* Reset margin */
 }
 
 panel content[type="iconside"] {
     display: flex;
-    align-items: center; /* Align items vertically */
+    align-items: center;
+    /* Align items vertically */
 }
 
 panel content[type="iconside"] img {
-    width: 50px; /* Adjust the width as needed */
-    margin-right: 10px; /* Add margin to separate from text */
+    width: 50px;
+    /* Adjust the width as needed */
+    margin-right: 10px;
+    /* Add margin to separate from text */
 }
 
 panel content[type="iconside"] iconwrapper {
@@ -103,27 +112,31 @@ panel content[type="iconside"] iconwrapper {
 
 panel content[type="iconside"] sidetext {
     display: flex;
-    flex-direction: column; /* Arrange items vertically */
+    flex-direction: column;
+    /* Arrange items vertically */
 }
 
 panel content[type="iconside"] ctitle,
 panel content[type="iconside"] csub {
-    margin: 0; /* Reset margin */
+    margin: 0;
+    /* Reset margin */
 }
 
 panel content[type="iconside"] ctitle {
-    font-size: 18px; /* Title font size */
+    font-size: 18px;
+    /* Title font size */
     margin-bottom: 4px;
 }
 
 panel content[type="iconside"] csub {
-    font-size: 16px; /* Subtitle font size */
+    font-size: 16px;
+    /* Subtitle font size */
 }
 
 /* Menubar */
 menubar {
     display: block;
-    background-color: #282828;
+    background-color: #222222;
     padding: 10px;
     /* padding-bottom: 1px; */
     position: -webkit-sticky;
@@ -185,11 +198,13 @@ menubar nav btncontainer {
     min-width: 20%;
 }
 
-menubar nav a, menubar nav button {
+menubar nav a,
+menubar nav button {
     color: #fafafa;
 }
 
-menubar nav a[selected], menubar nav button[selected] {
+menubar nav a[selected],
+menubar nav button[selected] {
     background-color: rgb(63, 63, 250);
     border: 8px solid rgb(63, 63, 250);
     border-radius: 10px;
@@ -199,3 +214,22 @@ menubar[placement="top"] {
     margin-bottom: 20px;
 }
 
+.stickycollapse {
+    visibility: visible;
+    opacity: 1;
+    max-height: 100px;
+    /* Set the maximum height when collapsed */
+    overflow: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease, max-height 0.3s ease, padding-top 0.3s ease, padding-bottom 0.3s ease, margin-top 0.3s ease, margin-bottom 0.3s ease;
+}
+
+.stickycollapse.hidden {
+    opacity: 0;
+    max-height: 0;
+    /* Collapse the content */
+    visibility: hidden;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
