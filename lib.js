@@ -1,4 +1,4 @@
-
+const debug = false;
 
 // Get all panels
 let panelElements = document.getElementsByTagName("panel");
@@ -33,5 +33,14 @@ for (let i = 0; i < menubarElements.length; i++) {
         document.querySelector("body").style.marginBottom = menubarElement.scrollHeight;
     } else {
         console.error("DynamoJS: Invalid placement of a menubar!")
+    }
+}
+
+if (debug) {
+    // Enable debug: Draw red borders around everything.
+    let allElements = document.getElementsByTagName("*");
+
+    for (var i = 0; i < allElements.length; i++) {
+        allElements[i].style.border = "1px solid red";
     }
 }

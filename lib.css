@@ -16,6 +16,10 @@ body {
     color: white;
 }
 
+hr {
+    color: #282828;
+}
+
 /* Panel */
 panel {
     display: block;
@@ -120,9 +124,18 @@ menubar {
     display: block;
     background-color: #282828;
     padding: 10px;
-    padding-bottom: 0px;
+    /* padding-bottom: 1px; */
     position: -webkit-sticky;
     position: sticky;
+}
+
+menubar[transparent] {
+    background-color: transparent;
+}
+
+menubar[justnav] {
+    padding: 0px;
+    padding-bottom: 0px;
 }
 
 menubar[placement="top"] {
@@ -157,18 +170,31 @@ menubar nav {
     text-align: center;
     background-color: #323232;
     border-radius: 10px;
-    padding: 5px;
-    margin-bottom: 10px;
+    padding: 12px;
 }
 
-menubar nav a {
-    color: #fafafa;
+menubar[justnav] nav {
+    background-color: black;
+    border-radius: 0px;
+}
+
+menubar nav btncontainer {
     font-size: large;
     display: inline-block;
-    /* border: 1px solid red;  */ /* DEBUG ONLY! */
     min-width: 20%;
+}
+
+menubar nav a, menubar nav button {
+    color: #fafafa;
+}
+
+menubar nav a[selected], menubar nav button[selected] {
+    background-color: rgb(63, 63, 250);
+    border: 8px solid rgb(63, 63, 250);
+    border-radius: 10px;
 }
 
 menubar[placement="top"] {
     margin-bottom: 20px;
 }
+
