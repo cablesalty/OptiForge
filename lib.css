@@ -1,5 +1,14 @@
+html {
+    box-sizing: border-box;
+}
+
 * {
     font-family: sans-serif;
+    margin: 0;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
 }
 
 body {
@@ -7,6 +16,7 @@ body {
     color: white;
 }
 
+/* Panel */
 panel {
     display: block;
     border-radius: 30px;
@@ -17,6 +27,8 @@ panel {
     padding: 19px;
     padding-top: 19px;
     margin-bottom: 15px;
+
+    margin: 10px;
 }
 
 panel img {
@@ -96,3 +108,63 @@ panel content[type="iconside"] csub {
     font-size: 16px; /* Subtitle font size */
 }
 
+
+/* Menubar */
+menubar {
+    display: block;
+    background-color: #282828;
+    padding: 10px;
+    padding-bottom: 0px;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+}
+
+menubar[placement="top"] {
+    top: 0;
+}
+
+menubar[placement="bottom"] {
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+}
+
+
+menubar ctitle {
+    display: block;
+    color: #ffffff;
+
+    font-size: larger;
+
+    margin-bottom: 8px;
+}
+
+menubar csub {
+    display: block;
+    color: #ffffffbf;
+
+    font-weight: 300;
+    font-size: large;
+
+    margin-bottom: 8px;
+}
+
+menubar nav {
+    text-align: center;
+    background-color: #323232;
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+menubar nav a {
+    color: #fafafa;
+    font-size: large;
+    display: inline-block;
+    /* border: 1px solid red;  */ /* DEBUG ONLY! */
+    min-width: 20%;
+}
+
+menubar[placement="top"] {
+    margin-bottom: 20px;
+}
