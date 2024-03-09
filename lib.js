@@ -48,8 +48,6 @@ window.addEventListener('scroll', function () {
     }
 });
 
-document.getElementById("profileDialog").showModal();
-
 if (debug) {
     // Enable debug: Draw red borders around everything.
     let allElements = document.getElementsByTagName("*");
