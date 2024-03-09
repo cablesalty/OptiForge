@@ -108,6 +108,36 @@ panel content[type="iconside"] csub {
     font-size: 16px; /* Subtitle font size */
 }
 
+panel content[type="ficonside"] {
+    display: flex;
+    align-items: center; /* Align items vertically */
+}
+
+panel content[type="ficonside"] iconwrapper {
+    /* width: 40px;  */
+    margin-right: 20px;
+    margin-left: 10px;
+    font-size: 26px;
+}
+
+panel content[type="ficonside"] sidetext {
+    display: flex;
+    flex-direction: column; /* Arrange items vertically */
+}
+
+panel content[type="ficonside"] ctitle,
+panel content[type="ficonside"] csub {
+    margin: 0; /* Reset margin */
+}
+
+panel content[type="ficonside"] ctitle {
+    font-size: 18px; /* Title font size */
+    margin-bottom: 4px;
+}
+
+panel content[type="ficonside"] csub {
+    font-size: 16px; /* Subtitle font size */
+}
 
 /* Menubar */
 menubar {
