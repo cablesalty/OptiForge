@@ -28,7 +28,7 @@ for (let i = 0; i < menubarElements.length; i++) {
     console.log(menubarPlacement);
     console.log(menubarElement.scrollHeight);
     if (menubarPlacement == "top") {
-        document.getElementsByTagName("body")[1].style.marginTop += menubarElement.scrollHeight;
+        document.querySelector("body").style.marginTop += menubarElement.scrollHeight;
     } else if (menubarPlacement == "bottom") {
         document.querySelector("body").style.marginBottom = menubarElement.scrollHeight;
     } else {

@@ -121,7 +121,7 @@ menubar {
     background-color: #282828;
     padding: 10px;
     padding-bottom: 0px;
-    position: -webkit-sticky; /* Safari */
+    position: -webkit-sticky;
     position: sticky;
 }
 
@@ -131,8 +131,6 @@ menubar[placement="top"] {
 
 menubar[placement="bottom"] {
     bottom: 0;
-    position: fixed;
-    width: 100%;
 }
 
 
